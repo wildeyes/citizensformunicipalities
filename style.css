@@ -10,10 +10,24 @@ html {
 }
 #map {
   position: absolute;
-  top: 0;
+  top: 20px;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+#sidebar li{
+  text-align:right;
+}
+
+#sidebar li .header{
+  text-align:center;
+  background-color:lightgrey;
+}
+
+#sidebar li .subheader{
+  text-align:center;
+  background-color:ghostwhite;
 }
 
 #search {
