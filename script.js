@@ -5,7 +5,7 @@ function _generateRandomString() {
 }
 
 function _getInput() {
-  return document.getElementById('pac-input');
+  return document.getElementById('search');
 }
 function jsonp(url, cb) {
   var cbName = _generateRandomString();

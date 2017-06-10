@@ -11,10 +11,15 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
-  <input id="pac-input" class="controls" type="text" placeholder="חיפוש">
+  <form id="search">
+    <input id="pac-input" class="controls" type="text" placeholder="חיפוש">
+    <button><i class="material-icons">search</i></button>
+  </form>
   <div id="map"></div>
   <script src="script.js"></script>
 </body>
