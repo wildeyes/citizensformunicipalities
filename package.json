@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wildeyes/citizensformunicipalities/issues"
   },
-  "homepage": "https://github.com/wildeyes/citizensformunicipalities#readme"
+  "homepage": "https://github.com/wildeyes/citizensformunicipalities#readme",
+  "dependencies": {
+    "@types/googlemaps": "^3.26.13"
+  }
 }
