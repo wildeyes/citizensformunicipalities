@@ -9,8 +9,8 @@ The goal of this project is to enable citizens to effectively organize for their
 
 The project is built in a way where nothing has to be done to start working.
 
-The JavaScript is in the script.js file.
-The styling is in the style.css file.
+The JavaScript is in the `script.js` file.
+The styling is in the `style.css` file.
 
 The code uses Materialize as a CSS framework and Google Maps for maps. 
 
