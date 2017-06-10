@@ -5,10 +5,20 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+html {
+  direction: rtl;
+}
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+#pac-input {
+  background: white;
+  padding: 0 5px;
+  margin: 5px;
+  width: 70%;
 }
