@@ -51,19 +51,21 @@ function downloadPlaces(cb) {
   xhr.send();
   function parse(text) {
     var csv = Papa.parse(text).data.slice(1);
-    
+    console.log(Papa.parse(text));
     var objects = csv.slice(1).map(function(arr) {
+      console.log(arr);
       return {
-        name: arr[0],
-        serialNumber: arr[1],
-        field: arr[2],
+        dateAdded: new Date(arr[0]),
+        name: arr[1],
+        sector: arr[2],
         description: arr[3],
         mainClaims: arr[4],
-        status: arr[5],
-        address: "פרי מגדים 34, מבשרת ציון",
-        facebookGroup: "https://www.facebook.com/groups/728808320520784/",
+        address: arr[5],
+        emailAddress: arr[6],
+        facebookGroup: arr[7],
+        otherLinks: arr[8],
       };
     });
-    return object;
+    return objects;
   }
 }
