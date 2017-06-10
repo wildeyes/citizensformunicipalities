@@ -62,8 +62,8 @@ function downloadPlaces(cb) {
         status: arr[5],
         address: "פרי מגדים 34, מבשרת ציון",
         facebookGroup: "https://www.facebook.com/groups/728808320520784/",
-        
       };
     });
+    return object;
   }
 }
