@@ -8,14 +8,37 @@
   <title>People For Cities - Open Information HaSadna</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-  
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 </head>
 
 <body>
+  <div id="sidebar">
+    <ul id="slide-out" class="side-nav"></ul>
+    <a href="#" data-activates="slide-out" class="button-collapse">
+      <i class="material-icons">menu</i>
+      </a>
+  </div>
   <div id="map"></div>
-  <script src="script.js"></script>
+  <script type="text/template" id="sidebartemplate">
+    <li>
+      <a class="header">מאבק הרכבת</a>
+    </li>
+    <li class="selectedAddress">{{address}}</li>
+    <li><a class="subheader">סטטוס</a></li>
+    <li class="status">{{status}}</li>
+    <li><a class="subheader">תיאור</a></li>
+    <li class="description">{{description}}</li>
+    <li><a class="subheader">טענות</a></li>
+    <li class="description">{{claims}} </li>
+  </script>
+  <script src="script.js">
+
+  </script>
+  <script>
+    $(".button-collapse").sideNav();
+  </script>
 </body>
 
 </html>
