@@ -36,3 +36,34 @@ function initMap() {
 }
 
 jsonp('https://maps.googleapis.com/maps/api/js?libraries=places&key=' + KEY, initMap);
+
+function downloadPlaces(cb) {
+  var xhr = new XMLHttpRequest;
+  xhr.open("GET", "http://cfm-csv-proxy.hstatic.org");
+  xhr.onload = function(e) {
+    cb(null, parse(xhr.responseText));
+  };
+  xhr.onerror = function(e) { 
+    var err = new Error("Unable to download CSV");
+    err.data = e;
+    cb(err) 
+  };
+  xhr.send();
+  function parse(text) {
+    var csv = Papa.parse(text).data.slice(1);
+    
+    var objects = csv.slice(1).map(function(arr) {
+      return {
+        name: arr[0],
+        serialNumber: arr[1],
+        field: arr[2],
+        description: arr[3],
+        mainClaims: arr[4],
+        status: arr[5],
+        address: "פרי מגדים 34, מבשרת ציון",
+        facebookGroup: "https://www.facebook.com/groups/728808320520784/",
+        
+      };
+    });
+  }
+}
