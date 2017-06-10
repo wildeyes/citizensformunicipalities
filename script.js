@@ -1,4 +1,4 @@
-var KEY = 'AIzaSyAvH9YqCyrBQoZeXlfNnYDRpngdwYmZEnw';
+var KEY = 'AIzaSyC5wwjMu6hpjONzk8RD4V9SAarUzs1DSzE';
 
 function jsonp(url, cb) {
   var cbName = _generateRandomString();
@@ -17,7 +17,7 @@ function _generateRandomString() {
 }
 
 function initMap() {
-  var uluru = { lat: -25.363, lng: 131.044 };
+  var uluru = { lat: 32.0853, lng: 34.7818 };
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
     center: uluru
