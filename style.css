@@ -10,15 +10,40 @@ html {
 }
 #map {
   position: absolute;
-  top: 0;
+  top: 20px;
   bottom: 0;
   right: 0;
   left: 0;
 }
 
+#sidebar li{
+  text-align:right;
+}
+
+#sidebar li .header{
+  text-align:center;
+  background-color:lightgrey;
+}
+
+#sidebar li .subheader{
+  text-align:center;
+  background-color:ghostwhite;
+}
+
+#search {
+  width: 40%;
+  display: flex;
+  margin: 5px;
+}
 #pac-input {
   background: white;
   padding: 0 5px;
-  margin: 5px;
-  width: 70%;
+}
+#search button {
+  width: 3em;
+  height: 3em;
+  font-size: 1rem;
+  background: hsl(173, 86%, 65%);
+  background: linear-gradient(90deg, hsl(173, 86%, 65%), hsl(173, 86%, 65%) 85%, hsl(173, 86%, 25%));
+  border: 0;
 }
